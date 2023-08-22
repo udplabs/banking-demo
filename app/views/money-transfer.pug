@@ -1,9 +1,10 @@
 extends layout
 block content
+    div(class="MakePaymentOrTransfer" style="width: 634px; height: 49.12px; left: 189px; top: 161.70px; position: absolute; color: #191A1C; font-size: 32px; font-family: Poppins; font-weight: 500; word-wrap: break-word") Make Payment or Transfer
     div(class="Cards" style="width: 1038px; height: 667.11px; left: 170px; top: 242.89px; position: absolute")
         div(class="Rectangle43" style="width: 1038px; height: 667px; left: 0px; top: 0.11px; position: absolute; background: white")
-        div(class="Or" style="width: 47px; height: 32.75px; left: 52px; top: 305.28px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word") OR
-        div(class="PaySomeoneNew" style="width: 223px; height: 24.56px; left: 116px; top: 308.64px; position: absolute; color: #1521CF; font-size: 24px; font-family: Poppins; font-weight: 600; text-decoration: underline; word-wrap: break-word") Pay someone new
+        //- div(class="Or" style="width: 47px; height: 32.75px; left: 52px; top: 305.28px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word") OR
+        //- div(class="PaySomeoneNew" style="width: 223px; height: 24.56px; left: 116px; top: 308.64px; position: absolute; color: #1521CF; font-size: 24px; font-family: Poppins; font-weight: 600; text-decoration: underline; word-wrap: break-word") Pay someone new
         div(class="Confirm" style="width: 100px; height: 24.56px; left: 866px; top: 610.08px; position: absolute; color: #1521CF; font-size: 24px; font-family: Poppins; font-weight: 600; text-decoration: underline; word-wrap: break-word") Confirm
         div(class="AccountSummaryBalanceIncludingPendingTransactions100000" style="width: 924px; height: 63.45px; left: 52px; top: 379.04px; position: absolute")
             span(style="color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word") Account Summary
@@ -17,12 +18,27 @@ block content
         div(class="Rectangle63" style="width: 924px; height: 49.81px; left: 5px; top: 30.70px; position: absolute; background: rgba(194.30, 196.22, 224.19, 0.14)")
 
     div(class="Group7" style="width: 929px; height: 503.53px; left: 217px; top: 355.47px; position: absolute")
-        div(class="To" style="width: 30px; height: 26.85px; left: 0px; top: 67.11px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word") To
-        div(class="JohnS2662AvailableBalance100000" style="width: 610px; height: 26.85px; left: 15px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word") JOHN S 2**66**2   Available balance  : $ 100,000
-        div(class="PayNow" style="width: 276px; height: 26.85px; left: 61px; top: 428.96px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word") Pay Now
-        div(class="ChooseADate" style="width: 276px; height: 26.85px; left: 61px; top: 476.68px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word") Choose a date
-        div(class="Rectangle63" style="width: 924px; height: 54.44px; left: 5px; top: 100.67px; position: absolute; background: rgba(194.30, 196.22, 224.19, 0.14)")
-        div(class="PleaseSelect" style="width: 610px; height: 26.85px; left: 15px; top: 111.57px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word") Please Select
-
-    div(class="Ellipse5" style="width: 18px; height: 17px; left: 232px; top: 797px; position: absolute; background: white; border-radius: 9999px; border: 0.50px black solid")
-    div(class="Ellipse6" style="width: 18px; height: 19px; left: 232px; top: 842px; position: absolute; background: white; border-radius: 9999px; border: 0.50px black solid")
+        form(action='/submit-transaction', method='POST')
+            div(class="To" style="width: 30px; height: 26.85px; left: 0px; top: 67.11px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word") To
+            div(class="JohnS2662AvailableBalance100000" style="width: 610px; height: 26.85px; left: 15px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word")
+                select(name="transferFrom")
+                    option Please Select
+                    option Checking XXXX1234
+                    option Savings XXXX5678
+                    option Credit Card XXXX8888
+                    option Investment XXXX0987
+            div(class="PayNow" style="width: 276px; height: 26.85px; left: 61px; top: 428.96px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word") Pay Now
+            div(class="ChooseADate" style="width: 276px; height: 26.85px; left: 61px; top: 476.68px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word") Choose a date
+            div(class="Rectangle63" style="width: 924px; height: 54.44px; left: 5px; top: 100.67px; position: absolute; background: rgba(194.30, 196.22, 224.19, 0.14)")
+            div(class="PleaseSelect" style="width: 610px; height: 26.85px; left: 15px; top: 111.57px; position: absolute; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word")
+                input(type='hidden', name='type', value='Money Transfer')
+                select(name="transferTo")
+                    option Please Select
+                    option Savings XXXX5678
+                    option Credit Card XXXX8888
+                    option Investment XXXX0987
+                p Amount
+                    input(type='text', name='amount', value='1244.88')
+                p
+                    input(type='Submit', value='Continue')
+    
