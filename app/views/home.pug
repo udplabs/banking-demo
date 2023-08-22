@@ -6,7 +6,7 @@ html
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title AtkoGreen 
+        title Atko Bank
         //link(rel='icon' href='/favicon.png')
         //link(rel='preload' as='font' type='font/woff2', crossorigin, href='https://cdn.auth0.com/styleguide/core/2.0.1/fonts/fakt/FaktPro-Normal.woff2')
         link(rel='stylesheet' href='/static/stylesheets/style.css')
@@ -53,12 +53,14 @@ html
                             .text-wrapper-4 Create account
                     button(class="overlap-wrapper")
                         .overlap-group
-                            .text-wrapper-4 Check Balance
+                            .text-wrapper-4
+                                a(href="/account") Check Balance
                     .feature-tiles
                         .money-transfer
                             .overlap-group-2
                                 img(class="vector" alt="Vector" src="/static/images/vector-2.svg")
-                                .text-wrapper-5 Money Transfer
+                                .text-wrapper-5
+                                    a(href="/transfer") Money Transfer
                         .withdrawal
                             .overlap-2
                                 img(class="img" alt="Vector" src="/static/images/vector.svg")

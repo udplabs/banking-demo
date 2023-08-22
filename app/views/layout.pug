@@ -6,88 +6,42 @@ html
         title AtkoGreen 
         //link(rel='icon' href='/favicon.png')
         //link(rel='preload' as='font' type='font/woff2', crossorigin, href='https://cdn.auth0.com/styleguide/core/2.0.1/fonts/fakt/FaktPro-Normal.woff2')
-        link(rel='stylesheet' href='/static/stylesheets/style.css')
+        //link(rel='stylesheet' href='/static/stylesheets/style.css')
         link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200")
         link(rel="icon" type="image/x-icon" href="/static/favicon.ico")
     body
-        .div
-            .grid
-                .box(class='text-wrapper')
-                    ul(class='menu-list')
-                        li
-                            a.home(href='/') AtkoGreen
-                //- .box(class='text-wrapper-2') Home 2
-                //- .box(class='text-wrapper-3') Products 3
-                //- .box(class='text-wrapper-3') Contacts 4
-                .box(class='text-wrapper-2')
-                    ul(class='menu-list')
-                        li
-                            a.basic(href='/') Home 
-                        li Products 
-                        li Contact
-                //- .box(class='text-wrapper-2')
-                    ul(class='menu-list')
-                        li <i class="material-symbols-outlined" fontSize="large">shopping_cart</i> 
-                        li 
-                            a.logout(href='/login')
-                                <i class="material-symbols-outlined" fontSize="large">person</i>
-                .box(class='text-wrapper-3')
-                    ul(class='menu-list')
-                        li 
-                        a.basic(href='/cart')
-                            <i class="material-symbols-outlined" fontSize="large">shopping_cart</i>
-                        if user
-                            li 
-                                p.loggedin Hello, 
-                                    a.basic(href='/user')=user.name
-                            li 
-                                a.basic(href='/logout')
-                                    <i class="material-symbols-outlined" fontSize="large">logout</i>
-                        else
-                            li 
-                            a.logout(href='/login')
-                                <i class="material-symbols-outlined" fontSize="large">person</i> 
-                //- .box(class='text-wrapper-2')
-                    if user
-                        p Hello, 
-                            a(href='/user')=user.name
-                        //- img(class="img" alt="Person" src="/images/person.svg")
-                    else
-                        //- a.login(href='/login') Log In
-                        a.logout(href='/login')
-                            //-<span class="material-symbols-outlined">person</span>
-                            <i class="material-symbols-outlined" fontSize="large">person</i>
-                //- .box
-                //-     img(class="line" alt="Line" src="/images/line-1.svg")
-                //-     | 5
-                //- .box
-                //-     img(class="img" alt="Filter right" src="/images/filterright.svg")
-                //-     | 6
-
+        div(class="Frame6" style="padding-bottom: 491px; padding-right: 7px; justify-content: flex-start; align-items: center; display: inline-flex")
+        div(class="Frame862" style="justify-content: center; align-items: center; display: inline-flex")
+            div(class="Payment" style="position: relative")
+            div(class="LoginTransactions" style="padding-top: 35px; padding-bottom: 879.24px; padding-left: 1210px; padding-right: 682px; left: 1px; top: 120.76px; position: absolute; background: #ECF3FB; justify-content: flex-end; align-items: center; display: inline-flex")
+                div(class="Rectangle2" style="width: 28px; height: 28px")
+            div(class="Products" style="width: 460px; height: 667px; left: 1298px; top: 243px; position: absolute")
+                div(class="Rectangle45" style="width: 458px; height: 667px; left: 0px; top: 0px; position: absolute; background: white")
+                div(class="Rectangle46" style="width: 405px; height: 56.24px; left: 28px; top: 62.69px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="Rectangle52" style="width: 405px; height: 56.24px; left: 26px; top: 580.23px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="Rectangle51" style="width: 405px; height: 56.24px; left: 26px; top: 493.80px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="Rectangle50" style="width: 405px; height: 56.24px; left: 26px; top: 407.38px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="Rectangle49" style="width: 405px; height: 56.24px; left: 28px; top: 320.96px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="Rectangle48" style="width: 405px; height: 56.24px; left: 28px; top: 234.54px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="Rectangle47" style="width: 405px; height: 56.24px; left: 28px; top: 148.11px; position: absolute; background: rgba(21, 33, 207, 0.14)")
+                div(class="OurProducts" style="width: 398px; height: 40.83px; left: 35px; top: 15.69px; position: absolute; color: #100F0F; font-size: 32px; font-family: Poppins; font-weight: 600; word-wrap: break-word") Our Products
+                div(class="SavingAccounts" style="width: 398px; height: 40.83px; left: 61px; top: 77.33px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Saving Accounts
+                div(class="PersonalLoan" style="width: 398px; height: 40.83px; left: 62px; top: 592.41px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Personal Loan
+                div(class="UpgradeYouAccount" style="width: 398px; height: 40.83px; left: 60px; top: 509.21px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Upgrade you account
+                div(class="Overdrafts" style="width: 398px; height: 40.83px; left: 60px; top: 422.79px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Overdrafts
+                div(class="CreditCards" style="width: 398px; height: 40.83px; left: 61px; top: 336.37px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Credit Cards
+                div(class="CurrentAccounts" style="width: 398px; height: 40.83px; left: 61px; top: 249.94px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Current Accounts
+                div(class="CashIsa" style="width: 398px; height: 40.83px; left: 60px; top: 163.52px; position: absolute; color: #100F0F; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word") Cash ISA
+            div(class="MakePaymentOrTransfer" style="width: 634px; height: 49.12px; left: 189px; top: 161.70px; position: absolute; color: #191A1C; font-size: 32px; font-family: Poppins; font-weight: 500; word-wrap: break-word") Make Payment or Transfer
+            div(class="Rectangle53" style="width: 1920px; height: 61.41px; left: 0px; top: 0px; position: absolute; background: #1521CF")
+            div(class="Rectangle54" style="width: 1920px; height: 61.41px; left: 0px; top: 61.41px; position: absolute; background: #6A6FBD")
+            div(class="AccountSummaryPaymentsTransfersStatementsTransactionsMailbox1Cards" style="height: 36.16px; left: 164px; top: 73.73px; position: absolute; color: white; font-size: 24px; font-family: Poppins; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word")
+                ul(style="list-style: none; vertical-align: middle; display: inline-flex;")
+                    li(style="padding: 0 1rem")
+                        a(href="/account") Account summary
+                    li(style="padding: 0 1rem")
+                        a(href="/transfer") Payments &amp; transfers
+                    li(style="padding: 0 1rem") Statements &amp; transactions
+                    li(style="padding: 0 1rem") Mailbox (1)
+                    li(style="padding: 0 1rem") Cards            
             block content
-
-            //- .home-page
-            //-     .about-us
-            //-         .frame-19
-            //-             .frame-20
-            //-                 .text-wrapper-10 About us
-            //-                 p(class="text-wrapper-11") Order now and appreciate the beauty of nature
-            //-             .frame-21
-            //-                 .frame-20
-            //-                     .frame-22
-            //-                         .img-wrapper
-            //-                             img(class="img-2" alt="Vector" src="/images/vector-1.svg")
-            //-                         .text-wrapper-12 Large Assortment
-            //-                     p(class="text-wrapper-13") we offer many different types of products with fewer variations in each category.
-            //-                 .frame-20
-            //-                     .frame-22
-            //-                         .img-wrapper
-            //-                             img(class="img-2" alt="Vector" src="/images/vector.svg")
-            //-                         .text-wrapper-12 Fast &amp; Free Shipping
-            //-                     p(class="text-wrapper-13") 4-day or less delivery time, free shipping and an expedited delivery option.
-            //-                 .frame-20
-            //-                     .frame-22
-            //-                         .img-wrapper
-            //-                             img(class="img-2" alt="Telephone outbound" src="/images/telephoneoutbound.svg")
-            //-                         .text-wrapper-12 24/7 Support
-            //-                     p(class="text-wrapper-13") answers to any business related inquiry 24/7 and in real-time.

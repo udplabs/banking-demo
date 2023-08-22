@@ -120,6 +120,18 @@ app.get('/', async (req, res, next) => {
 	}
 })
 
+app.get('/account', requiresAuth(), async (req, res) => {
+    res.render('account-details', {
+        user: req.oidc && req.oidc.user
+    })
+})
+
+app.get('/transfer', requiresAuth(), async (req, res) => {
+    res.render('money-transfer', {
+        user: req.oidc && req.oidc.user
+    })
+})
+
 app.get('/user', requiresAuth(), async (req, res) => {
 	res.render('user', {
 		user: req.oidc && req.oidc.user,
