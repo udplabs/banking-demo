@@ -1,0 +1,35 @@
+{
+  "name": "ecommerce-demo",
+  "version": "1.0.0",
+  "description": "An example ecommerce site showcasing Okta's new Financial Grade Identity (FGI) functionality.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udplabs/ecommerce-demo/issues"
+  },
+  "homepage": "https://github.com/udplabs/ecommerce-demo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:udplabs/ecommerce-demo.git"
+  },
+  "scripts": {
+    "init": "npm install --prefix ./functions",
+    "serve": "firebase emulators:start --only functions,hosting",
+    "lint": "eslint ./functions",
+    "deploy": "firebase deploy --only functions,hosting"
+  },
+  "keywords": [
+    "auth0",
+    "oauth2",
+    "authorization",
+    "samples",
+    "tools",
+    "labs"
+  ],
+  "dependencies": {
+    "prettier": "^2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "nodemon": "^3.0.1"
+  }
+}
